@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <h1>Lista de veículos</h1>
-            <p>Atualmente você tem { cars.length } carros cadastrados </p>
+            <p>Atualmente você tem { cars.length } veículos cadastrados </p>
         </div>
     );
 }
