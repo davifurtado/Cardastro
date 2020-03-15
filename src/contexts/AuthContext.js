@@ -9,8 +9,11 @@ const AuthContextProvider = (props) => {
     const addUser = (user, password) => {
         setUser([{ user, password, id: 1 }])
     }
+    const logout = () => {
+        setUser([])
+    }
     return (
-        <AuthContext.Provider value={{ user, addUser }}>
+        <AuthContext.Provider value={{ user, addUser, logout }}>
             { props.children }
         </AuthContext.Provider>
     );
