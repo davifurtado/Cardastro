@@ -3,15 +3,18 @@ import CarContextProvider from './contexts/CarContext';
 import Navbar from './components/Navbar';
 import CarList from './components/CarList';
 import CarForm from './components/CarForm';
+import AuthContextProvider from './contexts/AuthContext';
 
 function App() {
   return (
     <div className="App">
-      <CarContextProvider>
-        <Navbar />
-        <CarList />
-        <CarForm />
-      </CarContextProvider>
+      <AuthContextProvider>
+        <CarContextProvider>
+          <Navbar />
+          <CarList />
+          <CarForm />
+        </CarContextProvider>
+      </AuthContextProvider>
     </div>
   );
 }

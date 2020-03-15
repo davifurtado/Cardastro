@@ -1,11 +1,15 @@
 import React, { useContext } from 'react';
 import { CarContext } from '../contexts/CarContext';
+import { AuthContext } from '../contexts/AuthContext'
 
 const Navbar = () => {
     const { cars } = useContext(CarContext);
+    const { user } = useContext(AuthContext);
+    console.log(user);
     return (
         <div className="navbar">
-            <h1>Lista de veículos</h1>
+            <h1>Bem vindo, { user[0].user}</h1>
+            <h2>Lista de veículos</h2>
             <p>Atualmente você tem { cars.length } veículos cadastrados </p>
         </div>
     );
