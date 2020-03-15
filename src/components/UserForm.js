@@ -4,6 +4,8 @@ import { Password } from 'primereact/password';
 import { InputText } from 'primereact/inputtext';
 import { Button } from 'primereact/button';
 
+// O código foi convertido para componentes do primeReact
+
 const UserForm = () => {
     const { addUser } = useContext(AuthContext)
     const [user, setUser] = useState('');
@@ -16,22 +18,6 @@ const UserForm = () => {
     }
     return (
         <form className="user-form" onSubmit={handleLogin}>
-            {/* <input
-                type="text"
-                placeholder="Nome de Usuário..."
-                value={user}
-                onChange={(e) => setUser(e.target.value)}
-                required
-                maxLength={9}
-            /> */}
-            {/* <input
-                type="text"
-                placeholder="Senha..."
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-                maxLength={9}
-            /> */}
             <InputText
                 placeholder="Nome de Usuário..."
                 className="user-form-primereact"
@@ -53,7 +39,6 @@ const UserForm = () => {
             <div>
                 <Button className="p-button-secondary button-primereact" type="submit" label="Fazer Login"/>
             </div>
-            {/* <input type="submit" value="Fazer Login" /> */}
         </form>
     );
 }
