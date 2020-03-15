@@ -7,7 +7,6 @@ const AuthContextProvider = (props) => {
     const [user, setUser] = useState([
     ]);
     const addUser = (user, password) => {
-        // a função uuid serve para criar um id único aleatório
         setUser([{ user, password, id: 1 }])
     }
     return (
