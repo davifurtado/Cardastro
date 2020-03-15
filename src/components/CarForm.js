@@ -19,6 +19,7 @@ const CarForm = () => {
     }
     return (
         <form onSubmit={handleAddCar}>
+            <div>
             <input
                 type="text"
                 placeholder="Placa"
@@ -58,6 +59,7 @@ const CarForm = () => {
                 onChange={(e) => setQuilometragem(e.target.value)}
                 required
             />
+            </div>
             <input type="submit" value="Cadastrar Veículo" />
         </form>
     );
