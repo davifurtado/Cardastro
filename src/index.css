@@ -10,25 +10,34 @@ body {
 
 .App{
   background: #4c7fd6;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 90%;
   max-width: 700px;
   color: #eee;
+  height: 100%;
 }
 
 .navbar{
-  padding: 10px 20px;
+  padding: 5px 10px;
   text-align: center;
   background: #376cc8
 }
 
 .navbar h1{
-  margin: 10px 0;
+  margin: 5px 0;
 }
 
+.navbar h2 {
+  margin: 5px 0;
+}
 
+.navbar p{
+  margin: 5px 0
+}
 .car-list{
-  margin: 20px;
+  margin: 10px;
+  height: 62vh;
+  overflow-y: auto;
 }
 
 .car-list ul{
