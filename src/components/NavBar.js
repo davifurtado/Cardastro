@@ -1,20 +1,17 @@
 import React, { useContext } from 'react';
 import { CarContext } from '../contexts/CarContext';
 import { AuthContext } from '../contexts/AuthContext';
-import UserForm from './UserForm';
 
 const Navbar = () => {
     const { cars } = useContext(CarContext);
     const { user } = useContext(AuthContext);
-    return user.length > 0 ? (
+    return (
         <div className="navbar">
             <h1>Bem vindo, { user[0].user}</h1>
             <h2>Lista de veículos</h2>
             <p>Atualmente você tem { cars.length } veículos cadastrados </p>
         </div>
-    ) : (
-        <UserForm />
-    )
+    );
 }
 
 export default Navbar
