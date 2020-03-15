@@ -10,7 +10,9 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
-    "uuid": "^7.0.2"
+    "uuid": "^7.0.2",
+    "classnames": "^2.2.5",
+    "primeicons": "^2.0.0"
   },
   "scripts": {
     "start": "react-scripts start",

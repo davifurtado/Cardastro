@@ -1,5 +1,8 @@
 import React, { useContext, useState } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
+import { Password } from 'primereact/password';
+import { InputText } from 'primereact/inputtext';
+import { Button } from 'primereact/button';
 
 const UserForm = () => {
     const { addUser } = useContext(AuthContext)
@@ -13,23 +16,44 @@ const UserForm = () => {
     }
     return (
         <form className="user-form" onSubmit={handleLogin}>
-            <input
+            {/* <input
                 type="text"
                 placeholder="Nome de Usuário..."
                 value={user}
                 onChange={(e) => setUser(e.target.value)}
                 required
                 maxLength={9}
-            />
-            <input
+            /> */}
+            {/* <input
                 type="text"
                 placeholder="Senha..."
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required
                 maxLength={9}
+            /> */}
+            <InputText
+                placeholder="Nome de Usuário..."
+                className="user-form-primereact"
+                value={user}
+                onChange={(e) => setUser(e.target.value)}
+                required
+                maxLength={9}
             />
-            <input type="submit" value="Fazer Login" />
+            <Password
+                type="text"
+                placeholder="Senha..."
+                className="user-form-primereact"
+                value={password}
+                required
+                onChange={(e) => setPassword(e.target.value)}
+                maxLength={9}
+                feedback={false}
+            />
+            <div>
+                <Button className="p-button-secondary button-primereact" type="submit" label="Fazer Login"/>
+            </div>
+            {/* <input type="submit" value="Fazer Login" /> */}
         </form>
     );
 }

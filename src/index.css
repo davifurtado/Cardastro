@@ -120,8 +120,29 @@ input[type='submit']{
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 1400px) {
+/* Este CSS serve apenas para os componentes do PrimeReact para manter o padrão, foram copiados do código HTML*/
+.user-form-primereact {
+  width: 19%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 3px;
+  background: #2b6ab6;
+  color: #fff;
+  border: 0;
+  border-radius: 3px;
+}
 
+.button-primereact {
+  margin: 10px auto;
+  background: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: 'block';
+  align-self: center;
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 1400px) {
   .car-list{
     height: 55vh;
   }
@@ -138,7 +159,6 @@ input[type='submit']{
 }
 
 @media only screen and (max-width: 600px) {
-
   .car-list{
     height: 35vh;
   }
