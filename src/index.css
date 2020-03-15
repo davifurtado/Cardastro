@@ -5,11 +5,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: #305ba6
+  background: #b8e6fa
 }
 
 .App{
-  background: #4c7fd6;
+  background: #6197f3;
   margin: 10px auto;
   width: 90%;
   max-width: 700px;
@@ -20,7 +20,7 @@ body {
 .navbar{
   padding: 5px 10px;
   text-align: center;
-  background: #376cc8
+  background: #6197f3
 }
 
 .navbar h1{
@@ -46,9 +46,9 @@ body {
 }
 
 .car-list li{
-  background: #4d92e6;
+  background: #2b6ab6;
   border-radius: 4px;
-  padding: 10px;
+  padding: 5px;
   /*cursor: pointer;*/
   margin: 10px 0;
 }
@@ -85,7 +85,7 @@ input[type='text']{
   padding: 5px;
   box-sizing: border-box;
   margin: 3px;
-  background: #0d03a6;
+  background: #2b6ab6;
   color: #fff;
   border: 0;
 }
@@ -96,4 +96,9 @@ input[type='submit']{
   padding: 6px 20px;
   display: 'block';
   align-self: center;
+}
+
+.root-container {
+  padding: 5px 10px;
+  text-align: center;
 }

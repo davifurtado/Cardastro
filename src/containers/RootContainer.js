@@ -14,7 +14,7 @@ const RootContainer = () => {
             <CarForm />
         </div>
     ) : (
-        <div>
+        <div className="root-container">
             <h1>Faça Login para prosseguir</h1>
             <UserForm />
         </div>
