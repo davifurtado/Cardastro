@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CarContext } from '../contexts/CarContext';
-import { CarDetails } from '../components/CarDetails';
+import CarDetails from '../components/CarDetails';
 
 const CarList = () => {
     const { cars } = useContext(CarContext);
