@@ -12,7 +12,7 @@ const UserForm = () => {
         setPassword('');
     }
     return (
-        <form onSubmit={handleLogin}>
+        <form className="user-form" onSubmit={handleLogin}>
             <input
                 type="text"
                 placeholder="Nome de Usuário..."
