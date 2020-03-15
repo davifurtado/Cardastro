@@ -1,9 +1,12 @@
 import React from 'react';
+import CarContextProvider from './contexts/CarContext';
 
 function App() {
   return (
     <div className="App">
-      Under Construction
+      <CarContextProvider>
+
+      </CarContextProvider>
     </div>
   );
 }
