@@ -10,6 +10,7 @@ const CarDetails = ({ car }) => {
             <div className="modelo">{ car.modelo }</div>
             <div className="ano">{ car.ano }</div>
             <div className="quilometragem">{ car.quilometragem }</div>
+            <div onClick={() => removeCar(car.id)}>X</div>
         </li>
     );
 }
