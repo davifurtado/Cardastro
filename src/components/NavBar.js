@@ -9,7 +9,7 @@ const NavBar = () => {
         <div className="navbar">
             <button onClick={logout} className="sair">Sair</button>
             <h1>Bem vindo, { user[0].user}</h1>
-            <h2>Lista de veículos</h2>
+            <h2>Consulta de veículos</h2>
             <p>Atualmente você tem { cars.length } veículos cadastrados </p>
         </div>
     );
