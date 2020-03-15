@@ -38,7 +38,7 @@ body {
 }
 .car-list{
   margin: 10px;
-  height: 62vh;
+  height: 60vh;
   overflow-y: auto;
   border-radius: 5px;
 }
@@ -120,8 +120,26 @@ input[type='submit']{
   border-radius: 3px;
 }
 
+@media only screen and (max-width: 1400px) {
+
+  .car-list{
+    height: 55vh;
+  }
+}
+
 @media only screen and (max-width: 800px) {
   .user-form input {
     width: 50vw
+  }
+
+  .car-list{
+    height: 50vh;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .car-list{
+    height: 35vh;
   }
 }
