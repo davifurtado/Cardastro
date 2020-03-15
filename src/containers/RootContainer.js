@@ -1,8 +1,8 @@
 import React, { useContext } from 'react';
 import { AuthContext } from '../contexts/AuthContext';
 import UserForm from '../components/UserForm';
-import Navbar from '../components/Navbar';
 import CarList from '../components/CarList';
+import Navbar from '../components/Navbar';
 import CarForm from '../components/CarForm';
 
 const RootContainer = () => {
