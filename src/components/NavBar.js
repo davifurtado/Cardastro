@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { CarContext } from '../contexts/CarContext';
 import { AuthContext } from '../contexts/AuthContext';
 
-const Navbar = () => {
+const NavBar = () => {
     const { cars } = useContext(CarContext);
     const { user } = useContext(AuthContext);
     return (
@@ -14,4 +14,4 @@ const Navbar = () => {
     );
 }
 
-export default Navbar
+export default NavBar
