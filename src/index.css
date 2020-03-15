@@ -15,12 +15,14 @@ body {
   max-width: 700px;
   color: #eee;
   height: 100%;
+  border-radius: 5px;
 }
 
 .navbar{
   padding: 5px 10px;
   text-align: center;
-  background: #6197f3
+  background: #6197f3;
+  border-radius: 5px;
 }
 
 .navbar h1{
@@ -38,6 +40,7 @@ body {
   margin: 10px;
   height: 62vh;
   overflow-y: auto;
+  border-radius: 5px;
 }
 
 .car-list ul{
@@ -88,6 +91,7 @@ input[type='text']{
   background: #2b6ab6;
   color: #fff;
   border: 0;
+  border-radius: 3px;
 }
 input[type='submit']{
   margin: 10px auto;
@@ -96,6 +100,7 @@ input[type='submit']{
   padding: 6px 20px;
   display: 'block';
   align-self: center;
+  border-radius: 3px;
 }
 
 .root-container {
@@ -111,7 +116,8 @@ input[type='submit']{
 
 .user-form input {
   margin: 10px auto;
-  width: 20vw
+  width: 20vw;
+  border-radius: 3px;
 }
 
 @media only screen and (max-width: 800px) {
