@@ -10,7 +10,7 @@ const CarList = () => {
         <div>
             <input
             // exemplo de styled JS. Fora do padrão deste projeto mas poderia ter sido feito desta forma, ou até mesmo com styled components
-                style={{ width: '30%', margin: '0 5px' }}
+                style={{ width: '50%', margin: '0 5px' }}
                 type="text"
                 value={filtroPlaca} 
                 onChange={(e) => setFiltroPlaca(e.target.value)}
