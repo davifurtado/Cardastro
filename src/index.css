@@ -25,3 +25,42 @@ body {
 .navbar h1{
   margin: 10px 0;
 }
+
+
+.car-list{
+  margin: 20px;
+}
+
+.car-list ul{
+  padding: 0;
+  list-style-type: none;
+}
+
+.car-list li{
+  background: #4d92e6;
+  border-radius: 4px;
+  padding: 10px;
+  /*cursor: pointer;*/
+  margin: 10px 0;
+}
+
+.car-list .modelo{
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.car-list .marca{
+  font-size: 0.9em;
+  color: #ddd;
+}
+
+.empty{
+  margin: 20px;
+  text-align: center;
+}
+
+.deletar-veiculo {
+  color: red;
+  cursor: pointer;
+}
