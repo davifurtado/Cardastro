@@ -21,10 +21,11 @@ const CarForm = () => {
         <form onSubmit={handleAddCar}>
             <input
                 type="text"
-                placeholder="Placa..."
+                placeholder="Placa"
                 value={placa}
-                onChange={(e) => setPlaca(e.target.value)}
+                onChange={(e) => setPlaca(e.target.value ? e.target.value.replace('-','') : e.target.value)}
                 required
+                maxLength={7}
             />
             <input
                 type="text"
@@ -32,6 +33,7 @@ const CarForm = () => {
                 value={marca}
                 onChange={(e) => setMarca(e.target.value)}
                 required
+                maxLength={60}
             />
             <input
                 type="text"
@@ -39,6 +41,7 @@ const CarForm = () => {
                 value={modelo}
                 onChange={(e) => setModelo(e.target.value)}
                 required
+                maxLength={30}
             />
             <input
                 type="text"
@@ -46,6 +49,7 @@ const CarForm = () => {
                 value={ano}
                 onChange={(e) => setAno(e.target.value)}
                 required
+                maxLength={4}
             />
             <input
                 type="text"
@@ -54,7 +58,7 @@ const CarForm = () => {
                 onChange={(e) => setQuilometragem(e.target.value)}
                 required
             />
-            <input type="submit" value="add car" />
+            <input type="submit" value="Cadastrar Veículo" />
         </form>
     );
 }

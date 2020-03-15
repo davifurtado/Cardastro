@@ -64,3 +64,26 @@ body {
   color: red;
   cursor: pointer;
 }
+
+form{
+  padding: 10px;
+  display: 'flex';
+  justify-content: space-between;
+}
+input[type='text']{
+  width: 19%;
+  padding: 5px;
+  box-sizing: border-box;
+  margin: 2px;
+  background: #0d03a6;
+  color: #fff;
+  border: 0;
+}
+input[type='submit']{
+  margin: 10px auto;
+  background: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: 'block';
+  align-self: center;
+}
