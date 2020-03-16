@@ -88,8 +88,8 @@ input[type='text']{
   padding: 5px;
   box-sizing: border-box;
   margin: 3px;
-  background: #2b6ab6;
-  color: #fff;
+  /*background: #2b6ab6;
+  color: #fff;*/
   border: 0;
   border-radius: 3px;
 }
@@ -134,8 +134,8 @@ input[type='submit']{
   padding: 5px;
   box-sizing: border-box;
   margin: 3px;
-  background: #2b6ab6;
-  color: #fff;
+  /*background: #2b6ab6;
+  color: #fff;*/
   border: 0;
   border-radius: 3px;
 }
