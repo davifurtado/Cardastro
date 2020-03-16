@@ -22,7 +22,7 @@ const CarForm = () => {
             <div>
             <input
                 type="text"
-                placeholder="Placa"
+                placeholder="Placa..."
                 value={placa}
                 onChange={(e) => setPlaca(e.target.value ? e.target.value.replace('-','') : e.target.value)}
                 required
